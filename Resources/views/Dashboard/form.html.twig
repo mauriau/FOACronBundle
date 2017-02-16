@@ -15,46 +15,26 @@
     {{ form_errors(form.dayOfWeek) }}
 </div>
 
-<div >
-    <div class="{{ form.minute.vars.errors ? 'error' : ''}}">
+<div class="cron-items">
+    <div class="cron-item {{ form.minute.vars.errors ? 'error' : ''}}">
         <label>Minute: </label>
-        {{ form_widget(form.minute, {'attr':{
-                'class': 'time-input form-control ',
-                'data-original-title': 'Minute' | trans ({}, 'BCCCronManagerBundle')
-            }})
-        }}
+        {{ form_widget(form.minute, {'attr':{'class': 'time-input form-control input-small' }}) }}
     </div>
-    <div class="{{ form.hour.vars.errors ? 'error' : ''}}">
+    <div class="cron-item {{ form.hour.vars.errors ? 'error' : ''}}">
         <label>Hour: </label>
-        {{ form_widget(form.hour, {'attr':{
-                'class': 'time-input form-control ',
-                'data-original-title': 'Hour' | trans ({}, 'BCCCronManagerBundle')
-            }})
-        }}
+        {{ form_widget(form.hour, {'attr':{'class': 'time-input form-control input-small'}}) }}
     </div>
-    <div class="{{ form.dayOfMonth.vars.errors ? 'error' : ''}}">
+    <div class="cron-item {{ form.dayOfMonth.vars.errors ? 'error' : ''}}">
         <label>Day of Month: </label>
-        {{ form_widget(form.dayOfMonth, {'attr':{
-                'class': 'time-input form-control ',
-                'data-original-title': 'Day Of Month' | trans ({}, 'BCCCronManagerBundle')
-            }})
-        }}
+        {{ form_widget(form.dayOfMonth, {'attr':{'class': 'time-input form-control input-small'}}) }}
     </div>
-    <div class="{{ form.month.vars.errors ? 'error' : ''}}">
+    <div class="cron-item {{ form.month.vars.errors ? 'error' : ''}}">
         <label>Month: </label>
-        {{ form_widget(form.month, {'attr':{
-                'class': 'time-input form-control ',
-                'data-original-title': 'Month' | trans ({}, 'BCCCronManagerBundle')
-            }})
-        }}
+        {{ form_widget(form.month, {'attr':{'class': 'time-input form-control input-small'}}) }}
     </div>
-    <div class="{{ form.dayOfWeek.vars.errors ? 'error' : ''}}">
+    <div class="cron-item {{ form.dayOfWeek.vars.errors ? 'error' : ''}}">
         <label>Day of Week: </label>
-        {{ form_widget(form.dayOfWeek, {'attr':{
-                'class': 'time-input form-control ',
-                'data-original-title': 'Day Of Week' | trans ({}, 'BCCCronManagerBundle')
-            }})
-        }}
+        {{ form_widget(form.dayOfWeek, {'attr':{'class': 'time-input form-control input-small'}}) }}
     </div>
 </div>
 

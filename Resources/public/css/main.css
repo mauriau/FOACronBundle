@@ -23,7 +23,7 @@
     margin-right: 5px;
 }
 
-.modal-header, table td pre {
+table td pre {
     white-space: pre-wrap;
 }
 
@@ -33,4 +33,12 @@
 
 #log-content pre {
     font-size: x-small;
+}
+
+.cron-items {
+    display: flex;
+}
+
+.cron-item {
+    width: 10%;
 }
